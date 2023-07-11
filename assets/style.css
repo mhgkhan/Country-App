@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&family=Rubik:wght@300&family=Ubuntu&display=swap');
+
+/* fontfamilies  
+font-family: 'Bubbler One', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+h2,
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+body {
+    background: linear-gradient(80deg, purple, cadetblue);
+}
+
+
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 4px 10px;
+}
+
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+header h1 {
+    display: inline-block;
+    border-radius: 4px;
+    background: #0b3120;
+    padding: 3px 20px;
+    color: white;
+    margin-left: -15px;
+    font-family: 'Bubbler One', sans-serif;
+}
+
+
+header .icons a {
+    font-size: 1.5rem;
+    border-radius: 50%;
+    margin: 0px 8px;
+    color: white;
+}
+
+
+main {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+
+.container .app {
+    margin-top: 3rem;
+    box-shadow: 0px 0px 3px 4px #0b31203f;
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+}
+
+
+
+.container .app .search {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.container .app .search input,
+.app button {
+    font-size: 1.4rem;
+    padding: 9px 12px;
+    width: 90%;
+    border-radius: 23px;
+    border: 3px solid #0b31203f;
+    border-radius: 23px 0px 0px 23px;
+    outline: none;
+}
+
+
+
+
+.container .app .search button {
+    width: auto;
+    padding: 9px 7px;
+    border-radius: 0px 23px 23px 0px;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+
+
+
+.container .app .search input:focus {
+    box-shadow: 0px 0px 1px 2px #0b3120;
+
+}
+
+
+
+.container .app .search button:hover {
+    background: #0b3120;
+    color: white;
+}
+
+
+
+.container .app .search button:active {
+    transform: scale(1.1, 1.1);
+}
+
+
+
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+
+
+
+.info h2,
+h3 {
+    margin: 1rem auto;
+}
+
+
+
+.info img {
+    width: 200px;
+    height: 130px;
+}
+
+
+
+
+.more-info {
+    margin-top: 1rem;
+}
+
+.more-info h4,
+.more-info h5 {
+    margin: 5px;
+}
+
+.more-info h4 span,
+.more-info h5 span {
+    margin: 0px 8px;
+    color: orangered;
+}
+
+
+
+
+@keyframes ani {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+table {
+    width: 100%;
+    margin-top: 1rem;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+table thead td {
+    font-weight: bold;
+    /* background: gray; */
+}
+
+table tr td {
+    width: 25%;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+/* loading  */
+.loading {
+    border-left: 4px solid #530853;
+    border-top: 4px solid #a012a0;
+    border-right: 4px solid #b948b9;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+    margin: 2rem auto;
+    animation: ani 1s infinite linear;
+}
+
+
+
+
+
+@media screen and (max-width:650px) {
+    .container {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    html {
+        font-size: 80%;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    header .container .icons {
+        margin-top: .5rem !important;
+    }
+
+    .app {
+        margin-top: 1rem !important;
+    }
+
+    img {
+        width: 130px !important;
+        height: 90px !important;
+    }
+}
